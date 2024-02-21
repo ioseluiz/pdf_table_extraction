@@ -12,11 +12,9 @@ def save_csv_file(new_file_name, data, headers):
         print(f"Se ha generado el archivo {new_file_name} de forma exitosa...")
         
 
-
 def add_data_to_table(dataframe, csv_file):
     print(dataframe)
     print(csv_file)
-
 
 def get_pdf_table(full_file_name):
    table = tabula.read_pdf(full_file_name,stream=True)
@@ -32,7 +30,6 @@ def get_pdf_table(full_file_name):
    #print(df_table_reduced)
    table_dict =  df_table_reduced.to_dict(orient='records')
    return table_dict
-   
    
 # def read_pdf_file(full_file_name):
 #     reader = PdfReader(full_file_name)
